@@ -100,56 +100,45 @@ const Interface = () => {
               <span>
                 <img className="w-6 h-6" src="/email.svg" alt="" />
               </span>{" "}
-              <motion.span drag className={`${D ? "text-zinc-400" : "text-zinc-500"}`}>
+              <span  className={`${D ? "text-zinc-400" : "text-zinc-500"}`}>
                 mesabbir855@gmail.com
-              </motion.span>{" "}
+              </span>{" "}
             </div>
             <div className="flex items-center gap-10">
               <span>
                 <img className="w-6 h-6" src="/github.svg" alt="" />
               </span>{" "}
-              <motion.a
-              drag
+              <a
+              
                 className={`${D ? "text-zinc-400" : "text-zinc-500"}`}
                 href="https://github.com/sabbir-sabbir"
                 target="blank"
               >
                 GitHub.com
-              </motion.a>{" "}
+              </a>{" "}
             </div>
             <div className="flex items-center gap-10">
               <span>
                 <img className="w-6 h-6" src="/whatsapp.svg" alt="" />
               </span>{" "}
-              <motion.span drag className={`${D ? "text-zinc-400" : "text-zinc-500"}`}>
+              <span  className={`${D ? "text-zinc-400" : "text-zinc-500"}`}>
                 +880 1880501668
-              </motion.span>
+              </span>
             </div>
             <div className="flex items-center gap-10">
               <span>
                 <img className="w-6 h-6" src="insta.svg" alt="" />
               </span>{" "}
-              <motion.a
-              drag
+              <a
+              
                 className={`${D ? "text-zinc-400" : "text-zinc-500"}`}
                 href="https://www.instagram.com/iosabbir7890/"
                 target="blank"
               >
                 Instagram
-              </motion.a>
+              </a>
             </div>
-            <div  className=" flex items-center gap-10">
-              <span  >
-                <img className="w-6 h-6" src="linkedin.svg" alt="" />
-              </span>{" "}
-              <motion.a drag
-                className={`${D ? "text-zinc-400" : "text-zinc-500"}`}
-                href="www.linkedin.com/in/sabbir-rahman-2a994333a"
-                target="blank"
-              >
-                Linkedin
-              </motion.a>
-            </div>
+            
           </div>
           <motion.div
           dragSnapToOrigin={true}
