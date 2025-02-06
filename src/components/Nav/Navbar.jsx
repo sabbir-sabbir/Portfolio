@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import {Link} from 'react-scroll';
-import confetti from "canvas-confetti";
 import { Pro } from "../Context/Context";
 import {motion} from 'framer-motion'
 
