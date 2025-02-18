@@ -37,7 +37,7 @@ const Skills = () => {
               }} className={`flex items-center gap-1 ${D ? 'text-zinc-300' : 'text-zinc-600'}`}><img className="w-6 h-6" src="ts.svg" alt="typescript" />typescript</motion.div>
       <motion.div drag className={`flex items-center gap-1 ${D ? 'text-zinc-300' : 'text-zinc-600'}`}><img className="w-6 h-6" src="reactb.svg" alt="react js" />react.js</motion.div>
       <motion.div drag className={`flex items-center gap-1 ${D ? 'text-zinc-300' : 'text-zinc-600'}`}><img className="w-6 h-6" src="next.svg" alt="next js" />next.js</motion.div>
-      <motion.div drag className="flex items-center gap-1"><img className="w-6 h-6" src="redux.svg" alt="redux" />redux</motion.div>
+      <motion.div drag className="flex items-center gap-1"><img className="w-6 h-6" src="zustand.svg" alt="zustand" />Zustand</motion.div>
 
       {/* Row 2 */}
       <motion.div drag className={`flex items-center gap-1 ${D ? 'text-zinc-300' : 'text-zinc-600'}`}><img className="w-6 h-6" src="mui.svg" alt="mui" /> material.UI</motion.div>
