@@ -140,6 +140,7 @@ const Interface = () => {
             </div>
             
           </div>
+          <div className="flex items-center justify-start gap-4 ">
           <motion.div
           dragSnapToOrigin={true}
         dragTransition={{bounceStiffness: 300, bounceDamping: 10}}
@@ -162,6 +163,29 @@ const Interface = () => {
               Find Resume
             </a>
           </motion.div>
+          <motion.div
+          dragSnapToOrigin={true}
+        dragTransition={{bounceStiffness: 300, bounceDamping: 10}}
+         drag
+          whileDrag={{
+            backgroundColor: "#48cae4"
+          }}
+          whileHover={{
+            backgroundColor: '#48cae4'
+          }} 
+          whileTap={{
+            scale: 0.9, color: "red"
+          }}
+          className="w-[150px] h-auto mt-2 text-center py-2 px-3 text-white bg-gray-500 rounded-full text-sm ">
+            <a
+              className={`${D ? "text-zinc-100" : "text-zinc-900"} font-semibold `}
+              href="/Certificate of front end web development.pdf"
+              download="SABBIR_(Front-end Web-Devs)"
+            >
+             Certificate
+            </a>
+          </motion.div>
+          </div>
         </div>
 
         {/* Right Content */}
