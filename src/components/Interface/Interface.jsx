@@ -122,7 +122,7 @@ const Interface = () => {
                 <img className="w-6 h-6" src="/whatsapp.svg" alt="" />
               </span>{" "}
               <span  className={`${D ? "text-zinc-400" : "text-zinc-500"}`}>
-                +880 1880501668
+                +880 1329393695
               </span>
             </div>
             <div className="flex items-center gap-10">
