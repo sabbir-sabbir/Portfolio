@@ -140,7 +140,7 @@ const Interface = () => {
             </div>
             
           </div>
-          <div className="flex items-center justify-start gap-4 ">
+          <div className="flex items-center justify-start gap-4 w-full h-auto ">
           <motion.div
           dragSnapToOrigin={true}
         dragTransition={{bounceStiffness: 300, bounceDamping: 10}}
