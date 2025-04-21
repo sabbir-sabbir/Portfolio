@@ -11,8 +11,8 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className={`    fixed z-50   w-screen h-auto py-2 px-3 sm:px-3 md:px-4 lg:px-3 xl:px-4 border-b-1 border-white   ${D ? 'bg-gradient-to-r from-zinc-800 via-zinc-800/80 to-zinc-800' : 'bg-gradient-to-r from-white via-[#caf0f8] to-white'} `}>
-          <div className="flex justify-between items-center gap-4">
+        <div className={`fixed z-50   w-screen h-auto py-2 px-3 sm:px-3 md:px-4 lg:px-3 xl:px-4 border-b-1 border-white   ${D ? 'bg-gradient-to-r from-zinc-800 via-zinc-800/80 to-zinc-800' : 'bg-gradient-to-r from-white via-[#caf0f8] to-white'} `}>
+          <div className="flex justify-start items-center gap-24">
             <div className="flex items-center gap-1">
               {" "}
               <Link>
@@ -23,12 +23,11 @@ const Navbar = () => {
                 scale: 1.9,
               }}
                   className="w-[100px] h-[50px] animate-spin [animation-duration:5s] hover:scale-75 transition-all "
-                  src="/flower.svg"
+                  src="/navlogo.svg"
                   alt="logo"
                 />
               </Link>{" "}
-              <h1  className={`font-light leading-tight text-[18px] cursor-pointer ${D ? 'text-white' : 'text-black'}`}>SABBIR</h1>
-              <div></div>
+            
             </div>
 
             {/* second div */}
