@@ -20,7 +20,7 @@ const Interface = () => {
         className={` mt-[45px] w-full h-auto py-2 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col-reverse md:flex-row justify-between items-center gap-6 ${
           D
             ? "bg-gray-800"
-            : "bg-gradient-to-r from-[#ffffff] via-[#caf0f8]/35 to-[#e9ecef]"
+            : "bg-gradient-to-r from-[#2196f3] via-[#2196f3]/35 to-[#e9ecef]/75"
         } `}
         id="interface"
       >
@@ -31,170 +31,141 @@ const Interface = () => {
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1, x: [-0, -100, 200, -0] }}
               transition={{ duration: 1 }}
-              className="text-4xl sm:text-5xl font-bold p-2 text-green-300 bg-orange-400"
+              className="text-4xl sm:text-5xl font-bold font-Stardos p-2 text-green-300 bg-orange-400/75"
             >
               Hi, I'm
             </motion.h1>
             <motion.span
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1, x: [-0, -100, 150, 180, 190, 200, -0], rotate: [0,0,0,0,0,360,0] }}
-            transition={{ duration: 1.5 }}
-            drag
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{
+                opacity: 1,
+                scale: 1,
+                x: [-0, -100, 150, 180, 190, 200, -0],
+                rotate: [0, 0, 0, 0, 0, 360, 0],
+              }}
+              transition={{ duration: 1.5 }}
+              drag
               dragSnapToOrigin={true}
-              dragTransition={{bounceStiffness: 300, bounceDamping: 10}}
+              dragTransition={{ bounceStiffness: 300, bounceDamping: 10 }}
               whileDrag={{
                 scale: 1.9,
-              }} className="ml-2 text-4xl sm:text-5xl p-2 font-bold text-orange-400 border-r-2 border-green-400">
-              Front-End
+              }}
+              className="ml-2 text-4xl sm:text-5xl p-2 font-bold font-Nabla text-orange-400 border-r-2 border-green-400"
+            >
+              FRONT_END
             </motion.span>
           </div>
           <div className="flex flex-wrap items-center mb-6">
-            <motion.p drag
+            <motion.p
+              drag
               dragSnapToOrigin={true}
-              dragTransition={{bounceStiffness: 300, bounceDamping: 10}}
+              dragTransition={{ bounceStiffness: 300, bounceDamping: 10 }}
               whileDrag={{
                 scale: 1.9,
-              }} className="text-3xl sm:text-4xl font-semibold p-2 italic text-fuchsia-400 border-l-2 border-orange-400">
+              }}
+              className="text-3xl sm:text-4xl font-semibold p-2 italic text-orange-400 border-l-2 border-orange-400"
+            >
               WEBSITE -
             </motion.p>
-            <motion.span drag
+            <motion.span
+              drag
               dragSnapToOrigin={true}
-              dragTransition={{bounceStiffness: 300, bounceDamping: 10}}
+              dragTransition={{ bounceStiffness: 300, bounceDamping: 10 }}
               whileDrag={{
                 scale: 1.9,
-              }} className="text-3xl sm:text-4xl font-semibold p-2 text-orange-400 uppercase">
+              }}
+              className="text-3xl sm:text-4xl font-semibold p-2 text-orange-400 uppercase"
+            >
               Developer
             </motion.span>
           </div>
           <div className="w-screen h-2 ">
             <motion.div
-            drag
-            dragSnapToOrigin={true}
-            dragTransition={{bounceStiffness: 300, bounceDamping: 10}}
-            whileDrag={{
-              scale: 1.9,
-            }}
+              drag
+              dragSnapToOrigin={true}
+              dragTransition={{ bounceStiffness: 300, bounceDamping: 10 }}
+              whileDrag={{
+                scale: 1.9,
+              }}
               animate={{ width: "100%" }}
               transition={{ duration: 10 }}
               className="w-1/12 h-full bg-cyan-300"
             ></motion.div>
           </div>
-          <div className="flex flex-col gap-4 items-start">
-            <div>
-              <motion.h1
-              drag
-              dragSnapToOrigin={true}
-              dragTransition={{bounceStiffness: 300, bounceDamping: 10}}
-              whileDrag={{
-                scale: 1.9,
-              }}
-                className={`font-semibold text-xl ${
-                  D ? "text-zinc-400" : "text-zinc-500"
-                }`}
-              >
-                NAME: - SABBIR{" "}
-                <span className="text-orange-400 font-semibold ">-</span>{" "}
-              </motion.h1>
-            </div>
-            <div className="flex items-center gap-10">
-              <span>
-                <img className="w-6 h-6" src="/email.svg" alt="" />
-              </span>{" "}
-              <span  className={`${D ? "text-zinc-400" : "text-zinc-500"}`}>
-                mesabbir855@gmail.com
-              </span>{" "}
-            </div>
-            <div className="flex items-center gap-10">
-              <span>
-                <img className="w-6 h-6" src="/github.svg" alt="" />
-              </span>{" "}
-              <a
-              
-                className={`${D ? "text-zinc-400" : "text-zinc-500"}`}
-                href="https://github.com/sabbir-sabbir"
-                target="blank"
-              >
-                GitHub.com
-              </a>{" "}
-            </div>
-            <div className="flex items-center gap-10">
-              <span>
-                <img className="w-6 h-6" src="/whatsapp.svg" alt="" />
-              </span>{" "}
-              <span  className={`${D ? "text-zinc-400" : "text-zinc-500"}`}>
-                +880 1329393695
-              </span>
-            </div>
-            <div className="flex items-center gap-10">
-              <span>
-                <img className="w-6 h-6" src="insta.svg" alt="" />
-              </span>{" "}
-              <a
-              
-                className={`${D ? "text-zinc-400" : "text-zinc-500"}`}
-                href="https://www.instagram.com/iosabbir7890/"
-                target="blank"
-              >
-                Instagram
-              </a>
-            </div>
-            
+          <div className={`w-full h-auto py-2 px-2  shadow-xl ${D ? "bg-white/25" : "bg-[#e3f2fd]/15 backdrop-blur-3xl shadow-2xl "}`}>
+            <p className={`text-[16px] md:text-[18px]  font-Stardos tracking-wide leading-8 ${D ? "text-lime-200": "text-lime-100"}`}>
+            "Hey, I'm Sabbir — I turn ideas into visually engaging front-end experiences and strive to craft the best  
+
+ <span className="uppercase font-Saira tracking-wider"> solutions </span>
+ "
+            </p>
           </div>
           <div className="flex items-center justify-start gap-4 w-full h-auto ">
-          <motion.div
-          dragSnapToOrigin={true}
-        dragTransition={{bounceStiffness: 300, bounceDamping: 10}}
-         drag
-          whileDrag={{
-            backgroundColor: "#48cae4"
-          }}
-          whileHover={{
-            backgroundColor: '#48cae4'
-          }} 
-          whileTap={{
-            scale: 0.9, color: "red"
-          }}
-          className="w-[150px] h-auto mt-2 text-center py-2 px-3 text-white bg-gray-500 rounded-full text-sm ">
-            <a
-              className={`${D ? "text-zinc-100" : "text-zinc-900"} font-semibold `}
-              href="/resume.pdf"
-              download="SABBIR_(Front-end Web-Devs)"
+            <motion.div
+              dragSnapToOrigin={true}
+              dragTransition={{ bounceStiffness: 300, bounceDamping: 10 }}
+              drag
+              whileDrag={{
+                backgroundColor: "#48cae4",
+              }}
+              whileHover={{
+                backgroundColor: "#48cae4",
+              }}
+              whileTap={{
+                scale: 0.9,
+                color: "red",
+              }}
+              className="w-[150px] h-auto mt-2 text-center py-2 px-3 text-white bg-gray-500 rounded-full text-sm "
             >
-              Find Resume
-            </a>
-          </motion.div>
-          <motion.div
-          dragSnapToOrigin={true}
-        dragTransition={{bounceStiffness: 300, bounceDamping: 10}}
-         drag
-          whileDrag={{
-            backgroundColor: "#48cae4"
-          }}
-          whileHover={{
-            backgroundColor: '#48cae4'
-          }} 
-          whileTap={{
-            scale: 0.9, color: "red"
-          }}
-          className="w-[150px] h-auto mt-2 text-center py-2 px-3 text-white bg-gray-500 rounded-full text-sm ">
-            <a
-              className={`${D ? "text-zinc-100" : "text-zinc-900"} font-semibold `}
-              href="/Certificate of front end web development.pdf"
-              download="SABBIR_(Front-end Web-Devs)"
+              <a
+                className={`${
+                  D ? "text-zinc-100" : "text-zinc-900"
+                } font-semibold `}
+                href="/resume.pdf"
+                download="SABBIR_(Front-end Web-Devs)"
+              >
+                Find Resume
+              </a>
+            </motion.div>
+            <motion.div
+              dragSnapToOrigin={true}
+              dragTransition={{ bounceStiffness: 300, bounceDamping: 10 }}
+              drag
+              whileDrag={{
+                backgroundColor: "#48cae4",
+              }}
+              whileHover={{
+                backgroundColor: "#48cae4",
+              }}
+              whileTap={{
+                scale: 0.9,
+                color: "red",
+              }}
+              className="w-[150px] h-auto mt-2 text-center py-2 px-3 text-white bg-gray-500 rounded-full text-sm "
             >
-             Certificate
-            </a>
-          </motion.div>
+              <a
+                className={`${
+                  D ? "text-zinc-100" : "text-zinc-900"
+                } font-semibold `}
+                href="/Certificate of front end web development.pdf"
+                download="SABBIR_(Front-end Web-Devs)"
+              >
+                Certificate
+              </a>
+            </motion.div>
           </div>
         </div>
 
         {/* Right Content */}
-        <motion.div drag
-              dragSnapToOrigin={true}
-              dragTransition={{bounceStiffness: 300, bounceDamping: 10}}
-              whileDrag={{
-                scale: 1.9,
-              }} className="w-full md:w-1/2 flex justify-center">
+        <motion.div
+          drag
+          dragSnapToOrigin={true}
+          dragTransition={{ bounceStiffness: 300, bounceDamping: 10 }}
+          whileDrag={{
+            scale: 1.9,
+          }}
+          className=" hidden md:block w-full md:w-1/2 flex justify-center"
+        >
           <Lottie style={style} animationData={Website} />
         </motion.div>
       </section>
