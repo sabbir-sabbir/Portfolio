@@ -17,7 +17,7 @@ const Interface = () => {
   return (
     <>
       <section
-        className={` mt-[45px] w-full h-auto py-2 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col-reverse md:flex-row justify-between items-center gap-6 ${
+        className={` mt-[45px] w-full h-auto py-8 md:py-5 lg:py-2 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col-reverse md:flex-row justify-between items-center gap-6 ${
           D
             ? "bg-gray-800"
             : "bg-gradient-to-r from-[#2196f3] via-[#2196f3]/35 to-[#e9ecef]/75"
@@ -25,13 +25,13 @@ const Interface = () => {
         id="interface"
       >
         {/* Left Content */}
-        <div className="w-full md:w-1/2 space-y-2 flex flex-col mt-2">
+        <div className="w-full md:w-1/2 space-y-2 flex flex-col space-y-5 mt-2">
           <div className="flex flex-wrap items-center mb-2">
             <motion.h1
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1, x: [-0, -100, 200, -0] }}
               transition={{ duration: 1 }}
-              className="text-4xl sm:text-5xl font-bold font-Stardos p-2 text-green-300 bg-orange-400/75"
+              className="text-2xl md:text-3xl lg:text-5xl font-bold font-Stardos p-2 text-green-300 bg-orange-400/75"
             >
               Hi, I'm
             </motion.h1>
@@ -50,7 +50,7 @@ const Interface = () => {
               whileDrag={{
                 scale: 1.9,
               }}
-              className="ml-2 text-4xl sm:text-5xl p-2 font-bold font-Nabla text-orange-400 border-r-2 border-green-400"
+              className="ml-2 text-2xl md:text-3xl lg:text-5xl p-2 font-bold font-Nabla text-orange-400 border-r-2 border-green-400"
             >
               FRONT_END
             </motion.span>
@@ -63,7 +63,7 @@ const Interface = () => {
               whileDrag={{
                 scale: 1.9,
               }}
-              className="text-3xl sm:text-4xl font-semibold p-2 italic text-orange-400 border-l-2 border-orange-400"
+              className="text-2xl md:3xl lg:text-4xl font-semibold p-2 italic text-orange-400 border-l-2 border-orange-400"
             >
               WEBSITE -
             </motion.p>
@@ -74,7 +74,7 @@ const Interface = () => {
               whileDrag={{
                 scale: 1.9,
               }}
-              className="text-3xl sm:text-4xl font-semibold p-2 text-orange-400 uppercase"
+              className="text-2xl md:3xl lg:text-4xl font-semibold p-2 text-orange-400 uppercase"
             >
               Developer
             </motion.span>
@@ -93,10 +93,10 @@ const Interface = () => {
             ></motion.div>
           </div>
           <div className={`w-full h-auto py-2 px-2  shadow-xl ${D ? "bg-white/25" : "bg-[#e3f2fd]/15 backdrop-blur-3xl shadow-2xl "}`}>
-            <p className={`text-[16px] md:text-[18px]  font-Stardos tracking-wide leading-8 ${D ? "text-lime-200": "text-lime-100"}`}>
+            <p className={`  text-[16px] md:text-[18px] shadow-md  font-Stardos tracking-wide leading-8 ${D ? "text-lime-200": "text-green-50"}`}>
             "Hey, I'm Sabbir — I turn ideas into visually engaging front-end experiences and strive to craft the best  
 
- <span className="uppercase font-Saira tracking-wider"> solutions </span>
+ <span className="uppercase font-Saira tracking-wider text-[#03045e]/75"> solutions </span>
  "
             </p>
           </div>
@@ -115,12 +115,12 @@ const Interface = () => {
                 scale: 0.9,
                 color: "red",
               }}
-              className="w-[150px] h-auto mt-2 text-center py-2 px-3 text-white bg-gray-500 rounded-full text-sm "
+              className="w-[150px] h-auto mt-2 text-center py-2 px-3 text-white bg-gray-500 rounded-sm text-sm shadow-md "
             >
               <a
                 className={`${
-                  D ? "text-zinc-100" : "text-zinc-900"
-                } font-semibold `}
+                  D ? "text-zinc-100" : "text-green-50"
+                } font-semibold uppercase racking-wider font-audiowide `}
                 href="/resume.pdf"
                 download="SABBIR_(Front-end Web-Devs)"
               >
@@ -141,12 +141,12 @@ const Interface = () => {
                 scale: 0.9,
                 color: "red",
               }}
-              className="w-[150px] h-auto mt-2 text-center py-2 px-3 text-white bg-gray-500 rounded-full text-sm "
+              className="w-[150px] h-auto mt-2 text-center py-2 px-3 text-white bg-gray-500 rounded-sm text-sm shadow-md "
             >
               <a
                 className={`${
-                  D ? "text-zinc-100" : "text-zinc-900"
-                } font-semibold `}
+                  D ? "text-zinc-100" : "text-green-50"
+                } font-semibold tracking-wider uppercase font-audiowide `}
                 href="/Certificate of front end web development.pdf"
                 download="SABBIR_(Front-end Web-Devs)"
               >
