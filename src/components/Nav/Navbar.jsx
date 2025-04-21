@@ -11,8 +11,8 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className={`fixed z-50   w-screen h-auto py-1 px-3  md:px-4 lg:px-3 xl:px-4 border-b-1 border-white   ${D ? 'bg-gradient-to-r from-black via-black to-black' : 'bg-gradient-to-r from-white via-[#e5e5e5] to-[#dee2e6]'} `}>
-          <div className="flex justify-start items-center gap-24">
+        <div className={`fixed z-50 backdrop-blur-3xl bg-opacity-10 border border-white/15 border-b-1 shadow-lg  w-screen h-auto py-1 px-3  md:px-4 lg:px-3 xl:px-4    ${D ? 'bg-gradient-to-r from-black via-black to-black' : 'bg-gradient-to-r from-white via-[#e5e5e5] to-[#dee2e6]'} `}>
+          <div className="flex justify-start items-center gap-10 md:gap-11 lg:gap-12">
             <div className="flex items-center gap-1">
               {" "}
               <Link>
@@ -31,13 +31,13 @@ const Navbar = () => {
             </div>
 
             {/* second div */}
-            <div className="flex items-center gap-8 ">
+            <div className="flex items-center gap-4 lg:gap-8 ">
               <div>
                 {" "}
                 <Link
                  smooth={true} offset={-80} duration={500}
                   to='interface'
-                  className={`font-audiowide text-[18px] cursor-pointer hover:text-[22px] transition-all duration-300 ${D ? 'text-white' : 'text-black'}`}
+                  className={`nav-text ${D ? 'text-white' : 'text-black'}`}
                 >
                   Interface{" "}
                 </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
                 <Link
                   to='skill'
                   smooth={true} offset={-60} duration={500}
-                  className={`font-audiowide text-[18px] cursor-pointer  hover:text-[22px] transition-all duration-300 ${D ? 'text-white' : 'text-black'}`}
+                  className={`nav-text ${D ? 'text-white' : 'text-black'}`}
                 >
                   Skills
                 </Link>
@@ -55,7 +55,7 @@ const Navbar = () => {
                 <Link
                   smooth={true} offset={-80} duration={500}
                   to='works'
-                  className={`font-audiowide text-[18px] cursor-pointer  hover:text-[22px] transition-all duration-300 ${D ? 'text-white' : 'text-black'}`}
+                  className={`nav-text ${D ? 'text-white' : 'text-black'}`}
 
                 >
                   Works

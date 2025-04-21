@@ -32,4 +32,6 @@
   }
 
   
-  
+  .nav-text{
+    @apply font-audiowide text-[12px] md:text-[16px] lg:text-[18px] cursor-pointer hover:text-[13px] md:hover:text-[17px] lg:hover:text-[22px]  transition-all duration-300
+  }

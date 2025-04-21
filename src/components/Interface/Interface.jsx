@@ -17,7 +17,7 @@ const Interface = () => {
   return (
     <>
       <section
-        className={` mt-[65px] w-full h-auto py-2 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col-reverse md:flex-row justify-between items-center gap-6 ${
+        className={` mt-[45px] w-full h-auto py-2 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col-reverse md:flex-row justify-between items-center gap-6 ${
           D
             ? "bg-gray-800"
             : "bg-gradient-to-r from-[#ffffff] via-[#caf0f8]/35 to-[#e9ecef]"
