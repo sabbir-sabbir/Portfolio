@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-audiowide: 'Audiowide', sans-serif;
+  --font-Stardos: 'Stardos Stencil', sans-serif;
+  --font-Ubuntu: 'Ubuntu', sans-serif;
+
+}
 
 
 *{
