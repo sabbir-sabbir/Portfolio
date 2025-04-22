@@ -6,6 +6,7 @@ import Website from "../../assets/website.json";
 import Works from "../Works/Works";
 import Footer from "../Footer/Footer";
 import { Pro } from "../Context/Context";
+import Writeme from "../Writeme/Writeme";
 
 const Interface = () => {
   const { D, setD } = useContext(Pro);
@@ -171,6 +172,7 @@ const Interface = () => {
       </section>
       {/* othhers sections */}
       <Skills />
+      <Writeme/>
       <Works />
       <Footer />
     </>

@@ -17,8 +17,8 @@ const Skills = () => {
 
   return (
    <>
-   <section className={`overflow-hidden px-4 md:px-8 lg:px-16 xl:px-32 py-5  ${D ? 'bg-gray-800' : 'bg-[#caf0f8]/35' } `} id='skill' >
-  <div className={`w-full h-auto p-4  ${D ? 'bg-gray-700' : 'bg-gradient-to-r from-[#ffffff] via-[#caf0f8]/35 to-[#e9ecef]'} `}>
+   <section className={`overflow-hidden px-4 md:px-8 lg:px-16 xl:px-32 py-5  ${D ? 'bg-gray-800' : 'bg-gradient-to-br from-[#cbf3f0] via-[#cbf3f0] to-[#e0aaff]/65' } `} id='skill' >
+  <div className={`w-full h-auto p-4  ${D ? 'bg-gray-700 shadow-2xl' : ''} `}>
     
     {/* Skill Categories */}
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-2">
@@ -63,10 +63,15 @@ const Skills = () => {
     {/* Skill Description + Lottie Animation */}
     <div className="flex flex-col md:flex-row w-full h-auto items-center">
       <div className="w-full md:w-2/3 flex flex-col gap-4">
-        <div className="flex items-center gap-2"><img className="w-6 h-6" src="/seo.svg" alt="seo_svg" /><h1 className={`font-light text-xl ${D ? 'text-zinc-300' : 'text-zinc-600'} `}>Write SEO Friendly Code, With Responsive Design for All Devices.</h1></div>
-        <div className="flex items-center gap-2"><img className="w-6 h-6" src="/com.svg" alt="communication_svg" /><h1 className={`font-light text-xl ${D ? 'text-zinc-300' : 'text-zinc-600'} `}>Excellent Communication Expertise</h1></div>
-        <div className="flex items-center gap-2"><img className="w-6 h-6" src="/team.svg" alt="teamwork_svg" /><h1 className={`font-light text-xl ${D ? 'text-zinc-300' : 'text-zinc-600'} `}>Experience in Teamwork.</h1></div>
-        <div className="flex items-center gap-2"><img className="w-6 h-6" src="/speed.svg" alt="speed_svg" /><h1 className={`font-light text-xl ${D ? 'text-zinc-300' : 'text-zinc-600'} `}>Fast Learner.</h1></div>
+        <div className="flex items-center gap-2"><img className="w-6 h-6" src="/seo.svg" alt="seo_svg" /><h1 className={`font-Stardos ${D ? 'text-zinc-300' : 'text-zinc-600'} `}>Write SEO Friendly Code, With Responsive Design for All Devices.</h1></div>
+        <div className="flex items-center gap-2"><img className="w-6 h-6" src="/com.svg" alt="communication_svg" /><h1 className={`font-Stardos ${D ? 'text-zinc-300' : 'text-zinc-600'} `}>Excellent Communication Expertise.</h1></div>
+        <div className="flex items-center gap-2"><img className="w-6 h-6" src="/team.svg" alt="teamwork_svg" /><h1 className={`font-Stardos ${D ? 'text-zinc-300' : 'text-zinc-600'} `}>Experience in Teamwork.</h1></div>
+        <div className="flex items-center gap-2"><img className="w-6 h-6" src="/speed.svg" alt="speed_svg" /><h1 className={`font-Stardos ${D ? 'text-zinc-300' : 'text-zinc-600'} `}>Fast learner with the ability to quickly grasp new concepts and technologies.</h1></div>
+        <div className="flex items-center gap-2"><img className="w-6 h-6" src="/speed.svg" alt="speed_svg" /><h1 className={`font-Stardos ${D ? 'text-zinc-300' : 'text-zinc-600'} `}>Passionate about learning new things and continuously improving.</h1></div>
+        <div className="flex items-center gap-2"><img className="w-6 h-6" src="/speed.svg" alt="speed_svg" /><h1 className={`font-Stardos ${D ? 'text-zinc-300' : 'text-zinc-600'} `}>Strong problem-solving and analytical thinking skills.</h1></div>
+        <div className="flex items-center gap-2"><img className="w-6 h-6" src="/speed.svg" alt="speed_svg" /><h1 className={`font-Stardos ${D ? 'text-zinc-300' : 'text-zinc-600'} `}>Adaptable and open to new challenges.</h1></div>
+        <div className="flex items-center gap-2"><img className="w-6 h-6" src="/speed.svg" alt="speed_svg" /><h1 className={`font-Stardos ${D ? 'text-zinc-300' : 'text-zinc-600'} `}>Detail-oriented with a focus on producing high-quality work.</h1></div>
+        <div className="flex items-center gap-2"><img className="w-6 h-6" src="/speed.svg" alt="speed_svg" /><h1 className={`font-Stardos ${D ? 'text-zinc-300' : 'text-zinc-600'} `}>Strong time management and organizational abilities.</h1></div>
       </div>
 
       {/* Lottie Animation */}
@@ -75,7 +80,7 @@ const Skills = () => {
               dragTransition={{bounceStiffness: 300, bounceDamping: 10}}
               whileDrag={{
                 scale: 1.2,
-              }} className="w-full md:w-1/3 flex justify-center">
+              }} className=" hidden md:hidden lg:block w-full md:w-1/3 flex justify-center">
         <Lottie style={style} animationData={Skill} />
       </motion.div>
     </div>
