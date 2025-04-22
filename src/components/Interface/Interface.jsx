@@ -165,7 +165,7 @@ const Interface = () => {
           whileDrag={{
             scale: 1.9,
           }}
-          className=" hidden md:block w-full md:w-1/2 flex justify-center"
+          className=" hidden  w-full md:w-1/2 md:flex justify-center"
         >
           <Lottie style={style} animationData={Website} />
         </motion.div>
