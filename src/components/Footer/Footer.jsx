@@ -12,10 +12,10 @@ const Footer = () => {
     }
   return (
     <>
-    <footer className={`bg-gradient-to-r ${D ? 'bg-zinc-950' : 'from-[#caf0f8]/20 via-[#caf0f8]/35 to-[#e9ecef]'} ` }>
+    <footer className={` ${D ? 'bg-zinc-950' : 'bg-zinc-800'} ` }>
         <div className="flex justify-center items-center gap-10">
          
-        <p className={`${D ? 'text-zinc-400' : 'text-zinc-600'}`} > © 2025 WebDevs  Personal Portfolio &  All rights reserved.</p>
+        <p className={`${D ? 'text-zinc-400' : 'text-zinc-500'}`} > © 2025 WebDevs  Personal Portfolio &  All rights reserved.</p>
         <div> <Lottie style={style} animationData={myFooter}  /></div>
         </div>
         
