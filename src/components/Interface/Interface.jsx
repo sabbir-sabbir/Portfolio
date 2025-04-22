@@ -26,7 +26,7 @@ const Interface = () => {
         id="interface"
       >
         {/* Left Content */}
-        <div className="w-full md:w-1/2 space-y-2 flex flex-col space-y-5 mt-2">
+        <div className="w-full md:w-1/2  flex flex-col space-y-5 mt-2">
           <div className="flex flex-wrap items-center mb-2">
             <motion.h1
               initial={{ opacity: 0, scale: 0 }}
