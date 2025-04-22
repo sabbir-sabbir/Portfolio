@@ -77,7 +77,7 @@ const Card = () => {
             className="flex items-center justify-center cursor-pointer py-2 px-2 w-full bg-green-300 gap-3 hover:scale-105 duration-300"
           >
             <button className="cursor-pointer">
-              {!card ? "Click to Close" : "Click to Wiew"}
+              {!card ? "Click to Close" : "Click to View"}
             </button>{" "}
             <img className="w-6 h-6 " src="/view.svg" alt="" />{" "}
           </motion.div>
