@@ -96,12 +96,12 @@ const Card = () => {
             <motion.p>
               <a
                className={` underline-offset-1 underline ${D ? 'text-zinc-300' : 'text-zinc-600'}`}
-                href="https://github.com/sabbir-sabbir/Car-Selling-Landing-Page"
+                href="https://github.com/sabbir-sabbir/Nike-Brand-Website"
                 target="blank"
               >
                 See The Preview Link inside Repository --- <br />
-                This Project Made With React JS, BootStrap 5, Raw css & Vanila
-                JS
+                This Project Made With React JS, Tailwind CSS,  Vanila
+                JS & More
               </a>
             </motion.p>
           </motion.div>
