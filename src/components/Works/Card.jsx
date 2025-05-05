@@ -134,7 +134,7 @@ const Card = () => {
             <motion.p>
               <a
               className={` underline-offset-1 underline ${D ? 'text-zinc-300' : 'text-zinc-600'}`}
-                href="https://my-app-delta-ashy.vercel.app/"
+                href="https://github.com/sabbir-sabbir/my-app"
                 target="blank"
               >
                 See The Preview Link inside Repository --- <br />
