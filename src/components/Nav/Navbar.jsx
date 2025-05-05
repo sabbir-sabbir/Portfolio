@@ -11,7 +11,7 @@ const Navbar = () => {
     <>
       <nav>
         <div
-          className={`fixed z-50 backdrop-blur-3xl bg-opacity-10 border border-white/15 border-b-1 shadow-lg  w-screen h-auto py-1 px-3  md:px-4 lg:px-3 xl:px-4    ${
+          className={`fixed z-50  border border-white/15 border-b-1 shadow-lg  w-screen h-auto py-1 px-3  md:px-4 lg:px-3 xl:px-4    ${
             D
               ? "bg-gradient-to-r from-black via-black to-black"
               : "bg-gradient-to-r from-white via-[#e5e5e5] to-[#dee2e6]"
