@@ -134,12 +134,11 @@ const Card = () => {
             <motion.p>
               <a
               className={` underline-offset-1 underline ${D ? 'text-zinc-300' : 'text-zinc-600'}`}
-                href="https://github.com/sabbir-sabbir/Large-business-WebSite"
+                href="https://my-app-delta-ashy.vercel.app/"
                 target="blank"
               >
                 See The Preview Link inside Repository --- <br />
-                This Project Made With React JS, Tailwind css, Raw css, AOS
-                scroll lib & Vanila JS
+                This Project Made With Next JS, Tailwind css, TypeScript, ShadCN UI, & Tanstack Table.
               </a>
             </motion.p>
           </motion.div>
